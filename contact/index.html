@@ -1,0 +1,820 @@
+<!doctype html> <html> <head> <meta content="IE=edge" http-equiv="X-UA-Compatible"> <meta charset="utf-8"> <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"> <title>Contact Me! | cameronbroe.com</title> <meta name="description" content="Software engineer and music producer from Memphis, TN. Also, he is a video game, music, and beer enthusiast."> <meta name="keywords" content="cameron, roe, memphis, tn, software, engineer, contact, html, ruby, css, javascript, php, audio, music"> <meta name="site" content="cameronbroe.com"> <meta property="og:site_name" content="cameronbroe.com"> <meta name="twitter:card" content="summary_large_image"> <meta name="twitter:creator" content="Cameron Roe"> <meta name="twitter:description" content="Software engineer and music producer from Memphis, TN. Also, he is a video game, music, and beer enthusiast."> <meta name="twitter:site" content="@cameronbroe"> <meta name="twitter:title" content="Contact Me!"> <meta property="og:description" content="Software engineer and music producer from Memphis, TN. Also, he is a video game, music, and beer enthusiast."> <meta property="og:title" content="Contact Me!"> <link rel="preload" onload="this.rel = 'stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.css"> <style type="text/css">
+@font-face {
+  font-family: 'Pavanam';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pavanam'), local('Pavanam-Regular'), url(https://fonts.gstatic.com/s/pavanam/v1/dHwd9X8IN0mq6FAtlG0l1g.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Josefin Slab';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Josefin Slab SemiBold'), local('JosefinSlab-SemiBold'), url(https://fonts.gstatic.com/s/josefinslab/v6/NbE6ykYuM2IyEwxQxOIi2FFZMcfX2SbzQ69I7OWmkGo.ttf) format('truetype');
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+footer,
+header,
+nav {
+  display: block;
+}
+
+a {
+  background-color: transparent;
+}
+
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+
+button,
+input,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  overflow: visible;
+}
+
+button {
+  text-transform: none;
+}
+
+button,
+input[type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+h1 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width:992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.col-sm-10,
+.col-sm-2,
+.col-sm-4 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width:768px) {
+  .col-sm-10,
+  .col-sm-2,
+  .col-sm-4 {
+    float: left;
+  }
+
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+
+  .col-sm-offset-8 {
+    margin-left: 66.66666667%;
+  }
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+.form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #999;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #999;
+}
+
+.form-control::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+
+textarea.form-control {
+  height: auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-horizontal .form-group {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media (min-width:768px) {
+  .form-horizontal .control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: right;
+  }
+}
+
+.collapse {
+  display: none;
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav>li {
+  position: relative;
+  display: block;
+}
+
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+@media (min-width:768px) {
+  .navbar {
+    border-radius: 4px;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar-header {
+    float: left;
+  }
+}
+
+.navbar-collapse {
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  -webkit-overflow-scrolling: touch;
+  border-top: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+}
+
+@media (min-width:768px) {
+  .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .navbar-collapse.collapse {
+    display: block!important;
+    height: auto!important;
+    padding-bottom: 0;
+    overflow: visible!important;
+  }
+
+  .navbar-fixed-top .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.navbar-fixed-top .navbar-collapse {
+  max-height: 340px;
+}
+
+@media (max-device-width:480px) and (orientation:landscape) {
+  .navbar-fixed-top .navbar-collapse {
+    max-height: 200px;
+  }
+}
+
+.container>.navbar-collapse,
+.container>.navbar-header {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media (min-width:768px) {
+  .container>.navbar-collapse,
+  .container>.navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.navbar-fixed-bottom,
+.navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+@media (min-width:768px) {
+  .navbar-fixed-bottom,
+  .navbar-fixed-top {
+    border-radius: 0;
+  }
+}
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+
+.navbar-fixed-bottom {
+  bottom: 0;
+  margin-bottom: 0;
+  border-width: 1px 0 0;
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+@media (min-width:768px) {
+  .navbar>.container .navbar-brand {
+    margin-left: -15px;
+  }
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+  margin-top: 4px;
+}
+
+@media (min-width:768px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+.navbar-nav {
+  margin: 7.5px -15px;
+}
+
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+@media (min-width:768px) {
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+
+  .navbar-nav>li {
+    float: left;
+  }
+
+  .navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar-right {
+    float: right!important;
+    margin-right: -15px;
+  }
+}
+
+.jumbotron {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eee;
+}
+
+.jumbotron h1 {
+  color: inherit;
+}
+
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+
+.container .jumbotron {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 6px;
+}
+
+@media screen and (min-width:768px) {
+  .jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .container .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .jumbotron h1 {
+    font-size: 63px;
+  }
+}
+
+.clearfix:after,
+.clearfix:before,
+.container:after,
+.container:before,
+.form-horizontal .form-group:after,
+.form-horizontal .form-group:before,
+.nav:after,
+.nav:before,
+.navbar-collapse:after,
+.navbar-collapse:before,
+.navbar-header:after,
+.navbar-header:before,
+.navbar:after,
+.navbar:before {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after,
+.container:after,
+.form-horizontal .form-group:after,
+.nav:after,
+.navbar-collapse:after,
+.navbar-header:after,
+.navbar:after {
+  clear: both;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+footer,
+header,
+nav {
+  display: block;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button {
+  text-transform: none;
+}
+
+button,
+html [type="button"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+textarea {
+  overflow: auto;
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+.cr-jumbotron {
+  background-color: #56a5af;
+  color: #fcfcfc;
+  height: 50%;
+  padding: 0.5em 0.6em;
+}
+
+.cr-jumbotron h1 {
+  font-family: 'Josefin Slab', serif;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.cr-jumbotron p {
+  font-size: 1.2em;
+}
+
+.cr-contact-container {
+  background-color: #56a5af;
+  color: #fcfcfc;
+  height: auto;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 10px 10px 10px 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .cr-contact-container {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
+.cr-contact-txtbox {
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  list-style-type: none;
+}
+
+.contact-details li a {
+  color: #fcfcfc;
+}
+
+body {
+  background-color: #fcfcfc;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  font-family: 'Pavanam', sans-serif;
+  font-size: 1.6em;
+  height: 100%;
+}
+
+@media screen and (max-width: 421px) {
+  body {
+    padding-bottom: 140px;
+  }
+}
+
+header nav.navbar {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #263651;
+  font-size: 1em;
+}
+
+header nav.navbar .navbar-brand,
+header nav.navbar a {
+  font-family: 'Josefin Slab', serif;
+  color: #fcfcfc;
+  background-color: transparent;
+  -webkit-text-shadow: 1px 1px 3px #6F6F6F;
+  -moz-text-shadow: 1px 1px 3px #6F6F6F;
+  -ms-text-shadow: 1px 1px 3px #6F6F6F;
+  -o-text-shadow: 1px 1px 3px #6F6F6F;
+  text-shadow: 1px 1px 3px #6F6F6F;
+  font-size: 1.75em;
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  header nav.navbar .navbar-brand,
+  header nav.navbar a {
+    font-size: 1.25em;
+  }
+}
+
+header nav.navbar .navbar-brand {
+  font-weight: 600;
+  font-size: 2.25em;
+}
+
+header nav.navbar .navbar-toggle .icon-bar {
+  background-color: #fcfcfc;
+}
+
+header nav.navbar .navbar-toggle {
+  border: 1px solid #fcfcfc;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 1px #6F6F6F;
+  -moz-box-shadow: 0px 1px 1px #6F6F6F;
+  -ms-box-shadow: 0px 1px 1px #6F6F6F;
+  -o-box-shadow: 0px 1px 1px #6F6F6F;
+  box-shadow: 0px 1px 1px #6F6F6F;
+}
+
+header nav.navbar ul {
+  font-size: 0.7em;
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  header nav.navbar ul {
+    font-size: 0.7em;
+  }
+}
+
+footer nav.navbar {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #56a5af;
+}
+
+@media screen and (max-width: 421px) {
+  footer nav.navbar {
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+
+  footer nav.navbar .container {
+    text-align: center;
+    margin-top: -15px;
+  }
+
+  footer nav.navbar .icon-social-spotify {
+    padding-right: 0 !important;
+  }
+
+  footer nav.navbar ul {
+    padding-left: 0;
+  }
+}
+
+footer nav.navbar .copyright {
+  position: relative;
+  top: 10px;
+  left: 15px;
+  color: #fcfcfc;
+}
+
+@media screen and (max-width: 421px) {
+  footer nav.navbar .copyright {
+    display: none;
+    top: 15px;
+    left: 0;
+  }
+}
+
+footer nav.navbar .social-links {
+  float: right;
+  position: relative;
+  top: 7px;
+  right: 15px;
+  color: #fcfcfc;
+}
+
+@media screen and (max-width: 421px) {
+  footer nav.navbar .social-links {
+    float: none;
+    right: 0;
+    top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+    width: 100%;
+    font-size: 0.95em;
+  }
+}
+
+footer nav.navbar .social-links li {
+  display: inline;
+}
+
+footer nav.navbar .social-links li a {
+  text-decoration: none;
+}
+
+footer nav.navbar .social-links .social {
+  padding-right: 10px;
+  color: #fcfcfc;
+  font-size: 1.75em;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+</style>
+<script id="loadcss">
+(function(u,s){!function(e){"use strict";var n=function(n,t,o){var l,r=e.document,i=r.createElement("link");if(t)l=t;else{var a=(r.body||r.getElementsByTagName("head")[0]).childNodes;l=a[a.length-1]}var d=r.styleSheets;i.rel="stylesheet",i.href=n,i.media="only x",l.parentNode.insertBefore(i,t?l:l.nextSibling);var f=function(e){for(var n=i.href,t=d.length;t--;)if(d[t].href===n)return e();setTimeout(function(){f(e)})};return i.onloadcssdefined=f,f(function(){i.media=o||"all"}),i};"undefined"!=typeof module?module.exports=n:e.loadCSS=n}("undefined"!=typeof global?global:this);for(var i in u){loadCSS(u[i],s);}}(['https://fonts.googleapis.com/css?family=Pavanam','https://fonts.googleapis.com/css?family=Josefin+Slab:600','/stylesheets/bootstrap.min.c16fc4d1.css','/stylesheets/site.06257bbf.css'],document.getElementById("loadcss")));
+</script>
+<noscript>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pavanam">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Slab:600">
+<link href="/stylesheets/bootstrap.min.c16fc4d1.css" rel="stylesheet">
+<link href="/stylesheets/site.06257bbf.css" rel="stylesheet">
+</noscript>   <script src="/javascripts/jquery.min.js" defer="defer"></script> <script src="/javascripts/bootstrap.min.js" defer="defer"></script>  </head> <body class="contact contact_index"> <header> <nav class="navbar navbar-fixed-top"> <div class="container"> <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="/">Cameron Roe</a> </div> <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <ul class="nav navbar-nav navbar-right"> <li class="active"><a href="/">Home</a></li> <li><a href="/projects/">Projects</a></li> <li><a href="/references/">References</a></li> <li><a href="/contact/">Contact Me</a></li> <li><a href="/CameronRoe-Resume.pdf">Download My Resume</a></li> </ul> </div> </div> </nav> </header> <div class="container"> <div class="jumbotron cr-jumbotron"> <h1>Contact Me</h1> <p>Use the form below to quickly send me an email!</p> <p>Or here are my contact details:</p> <ul class="contact-details"> <li><span class="icon-phone"></span> Phone: (901) 871-4834</li> <li><span class="icon-envelope-letter"></span> Email: <a href="mailto:cameron.b.roe@gmail.com">cameron@cameronbroe.com</a></li> </ul> </div> <div class="container cr-full-height"> <form class="form-horizontal cr-full-height" action="https://formspree.io/cameron@cameronbroe.com"> <div class="form-group cr-full-height"> <div class="clearfix cr-contact-container"> <label class="col-sm-2 control-label" for="full-name">Full Name: </label> <div class="col-sm-10 cr-contact-txtbox"> <input class="form-control" name="full-name"> </div> <label class="col-sm-2 control-label" for="_replyto">Email: </label> <div class="col-sm-10 cr-contact-txtbox"> <input class="form-control" type="email" name="_replyto"> </div> <label class="col-sm-2 control-label" for="_subject">Subject: </label> <div class="col-sm-10 cr-contact-txtbox"> <input class="form-control" name="_subject"> </div> <label class="col-sm-2 control-label" for="message">Message: </label> <div class="col-sm-10 cr-contact-txtbox"> <textarea name="message" class="form-control" rows="8"></textarea> </div> <div class="col-sm-4 col-sm-offset-8"> <input class="form-control" type="submit" value="Send Me An Email!"> </div> </div> </div> </form> </div> </div> <footer> <nav class="navbar navbar-fixed-bottom"> <div class="container"> <span class="copyright">Made with ♥ in Memphis, TN</span> <div class="social-links"> <ul> <li><a href="https://github.com/cameronbroe"><span class="social icon-social-github"></span></a></li> <li><a href="https://www.linkedin.com/in/cameronbroe"><span class="social icon-social-linkedin"></span></a></li> <li><a href="https://open.spotify.com/user/commanderviral"><span class="social icon-social-spotify"></span></a></li> </ul> </div> </div> </nav> </footer> </body> </html>

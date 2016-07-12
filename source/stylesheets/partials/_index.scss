@@ -1,0 +1,135 @@
+.cr-jumbotron {
+	background-color: $footer;
+	color: $font-color;
+	height: 50%;
+	padding: 0.5em 0.6em;
+	h1 {
+		font-family: 'Josefin Slab', serif;
+		font-weight: 600;
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+}
+
+#skills-list {
+	@include prefix(column-count, 3);
+	@include prefix(column-rule, 2px outset $header);
+	@include prefix(column-gap, 40px);
+	list-style-type: none;
+	padding-left: 0;
+
+	li {
+		//display: inline-block;
+	}
+
+	li::before {
+		padding-left: 20px;
+	}
+}
+
+#hobbies-list {
+	@include prefix(column-count, 2);
+	@include prefix(column-rule, 2px outset $header);
+	@include prefix(column-gap, 40px);
+	list-style-type: none;
+	padding-left: 0;
+
+	li {
+		//display: inline-block;
+	}
+
+	li::before {
+		padding-left: 20px;
+	}
+}
+
+.cr-body-container {
+	@media screen and (min-width: 768px) {
+		padding-left: 0px;
+		padding-right: 30px;
+	}
+}
+
+.cr-section-container {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 20px;
+
+	.cr-section {
+		padding: 0;
+		border-left: 1px solid $header;
+		border-right: 1px solid $header;
+		border-bottom: 1px solid $header;
+		border-radius: 20px 20px 0px 0px;
+	
+		.cr-section-header {
+			background-color: $header;
+			h2 {
+				font-family: 'Josefin Slab', serif;
+				font-weight: 600;
+				width: 100%;
+				padding-left: 20px;
+				color: $font-color;
+			}
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 10px;
+			padding-bottom: 5px;
+			border-radius: 20px 20px 0px 0px;
+		}
+	
+		.cr-section-content {
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-top: 10px;
+		}
+	}
+}
+
+.skills {
+	padding: 0;
+	.cr-body-container {
+		padding: 0;
+	}
+}
+
+#summary .cr-section {
+	@media screen and (min-width: 992px) and (max-width: 1199px) {
+		//min-height: 353px;
+
+		.cr-section-content {
+			font-size: 1.15em;
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		//min-height: 373px;
+
+		.cr-section-content {
+			font-size: 1.5em;
+		}
+	}
+}
+
+#skills-row, #hobbies-row {
+	margin-bottom: 15px;
+}
+
+.kill-padding {
+	@media screen and (max-width: 991px) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+#summary {
+	@media screen and (min-width: 768px) {
+		padding-left: 13px;
+	}
+}
+
+.cr-recent-posts {
+	padding-right: 0;
+}

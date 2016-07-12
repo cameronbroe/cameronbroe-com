@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <%= auto_display_meta_tags %>
+
+    <link rel="preload" onload="this.rel = 'stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pavanam">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Slab:600">
+
+
+    <%= stylesheet_link_tag "/stylesheets/bootstrap.min.css" %>
+    <%= javascript_include_tag "/javascripts/jquery.min.js", defer: true %>
+    <%= javascript_include_tag "/javascripts/bootstrap.min.js" , defer: true%>
+
+    <%= stylesheet_link_tag :site %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <%= partial "layouts/header" %>
+    <div class="container">
+      <%= yield %>
+    </div>
+    <%= partial "layouts/footer" %>
+  </body>
+</html>

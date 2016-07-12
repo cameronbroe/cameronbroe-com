@@ -1,0 +1,32 @@
+.cr-contact-container {
+	background-color: $footer;
+	color: $font-color;
+	height: auto;
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 15%;
+	margin-right: 15%;
+	@media screen and (max-width: 767px) {
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+	border-radius: 10px 10px 10px 10px;
+}
+
+.cr-contact-txtbox {
+	margin-bottom: 20px;
+}
+
+.contact-details {
+	list-style-type: none;
+
+	li a, li a:visited {
+		color: $font-color;
+	}
+
+	li a:hover, li a:focus {
+		color: $hover-color;
+		text-decoration: none;
+	}
+}

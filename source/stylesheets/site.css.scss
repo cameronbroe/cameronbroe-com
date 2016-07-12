@@ -1,0 +1,144 @@
+@charset "utf-8";
+@import "normalize";
+
+@import "partials/colors";
+@import "partials/mixins";
+@import "partials/index";
+@import "partials/projects";
+@import "partials/references";
+@import "partials/contact";
+
+body {
+  background-color: $background;
+  padding-top: 110px; // Needed because of fixed to top header
+  padding-bottom: 110px; // Needed because of fixed to bottom footer
+  @media screen and (max-width: 421px) {
+    padding-bottom: 140px; // Small screens need some more padding
+  }
+  font-family: 'Pavanam', sans-serif; // Global font
+  font-size: 1.6em;
+  height: 100%;
+}
+
+header {
+  nav.navbar {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: $header;
+    font-size: 1em;
+
+    .navbar-brand, .navbar-brand:focus, .navbar-brand:visited,
+    a, a:focus, a:visited {
+      font-family: 'Josefin Slab', serif;
+      color: $font-color;
+      background-color: transparent;
+      @include prefix(text-shadow, 1px 1px 3px #6F6F6F);
+      font-size: 1.75em;
+      @media screen and (max-width: 991px) and (min-width: 768px) {
+        font-size: 1.25em;
+      }
+    }
+
+    .navbar-brand, .navbar-brand:focus, .navbar-brand:visited {
+      font-weight: 600;
+      font-size: 2.25em;
+    }
+
+    .navbar-toggle .icon-bar {
+      background-color: $background;
+    }
+
+    .navbar-toggle {
+      border: 1px solid $background;
+      border-radius: 5px;
+      @include prefix(box-shadow, 0px 1px 1px #6F6F6F);
+    }
+
+    .navbar-brand:hover, a:hover {
+      color: $hover-color;
+      background-color: transparent;
+    }
+
+    ul {
+      font-size: 0.7em;
+      @media screen and (max-width: 991px) and (min-width: 768px) {
+        font-size: 0.7em;
+      }
+    }
+  }
+}
+
+footer {
+  nav.navbar {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: $footer;
+
+    @media screen and (max-width: 421px) {
+      padding-bottom: 0px;
+      padding-top: 0px;
+
+      .container {
+        text-align: center;
+        margin-top: -15px;
+      }
+
+      .icon-social-spotify {
+        padding-right: 0 !important;
+      }
+
+      ul {
+        padding-left: 0;
+      }
+    }
+
+    .copyright {
+      position: relative;
+      top: 10px;
+      left: 15px;
+      color: $font-color;
+      @media screen and (max-width: 421px) {
+        display: none;
+        top: 15px;
+        left: 0;
+      }
+    }
+
+    .social-links {
+      float: right;
+      position: relative;
+      top: 7px;
+      right: 15px;
+      color: $font-color;
+      @media screen and (max-width: 421px) {
+        float: none;
+        right: 0;
+        top: 30px;
+        padding-bottom: 30px;
+        margin: auto;
+        width: 100%;
+        font-size: 0.95em;
+      }
+
+      li {
+        display: inline;
+        a, a:hover, a:focus, a:visited {
+          text-decoration: none;
+        }
+      }
+
+      .social {
+        padding-right: 10px;
+        color: $font-color;
+        font-size: 1.75em;
+        font-weight: 500;
+        text-decoration: none;
+      }
+
+      .social:hover {
+        color: $hover-color;
+        text-decoration: none;
+      }
+    }
+  }
+}

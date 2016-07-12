@@ -1,0 +1,28 @@
+---
+title: References
+keywords: memphis, tn, brian, wentzloff, joe, thompson, snaggstuff, software, supply, group, musistic, cameron, roe
+---
+<div class="jumbotron cr-jumbotron">
+	<h1>My References</h1>
+</div>
+<div class="container cr-body-container" id="projects-container">
+	<div class="row row-eq-height">
+		<% data.references.references.each do |ref| %>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 cr-section-container">
+				<div class="cr-section">
+					<div class="cr-section-header cr-reference-name">
+						<h2><%= ref.name %></h2>
+					</div>
+					<div class="cr-section-content cr-reference-content">
+						<ul class="cr-reference-details">
+							<li><span class="icon-user"></span> Position: <%= ref.position %></li>
+							<li><span class="icon-organization"></span> Company: <%= ref.company %></li>
+							<li><span class="icon-envelope-letter"></span> Email: <a href="mailto:<%= ref.email %>"><%= ref.email %></a></li>
+							<li><span class="icon-phone"></span> Phone: <%= ref.phone %></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		<% end %>
+	</div>
+</div>

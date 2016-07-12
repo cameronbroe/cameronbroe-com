@@ -1,0 +1,19 @@
+{
+  references: [
+    {
+      name: "Brian Wentzloff",
+      phone: "(901) 831-2339",
+      email: "brian@musistic.com",
+      position: "Chief Technology Officer",
+      company: "Musistic, Inc."
+    },
+
+    {
+      name: "Joe Thompson",
+      phone: "(877) 485-6101",
+      email: "joe@softwaresupplygroup.com",
+      position: "Customer Service Manager",
+      company: "Elite Business Group, LLC"
+    },
+  ]
+}

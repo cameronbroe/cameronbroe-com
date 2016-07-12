@@ -1,0 +1,31 @@
+{
+	projects: [
+		{
+			name: "GistRuby",
+			description: "A tool for uploading local source files to GitHub Gists.",
+			github: "gistruby",
+			license: "MIT"
+		},
+
+		{
+			name: "Mindblow",
+			description: "A simple Brainfuck interpreter with a step-based interactive debugger.",
+			github: "mindblow",
+			license: "MIT"
+		},
+
+		{
+			name: "Rosh",
+			description: "A simple Linux shell that was written as a semester project for my undergrad operating systems course",
+			github: "rosh",
+			license: "None"
+		},
+
+    {
+      name: "Logato.me",
+      description: "A small web application that intelligently generates random words that are similar to English words.",
+      github: "logato.me",
+      license: "None"
+    }
+	]
+}
