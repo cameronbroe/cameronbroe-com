@@ -1,0 +1,26 @@
+{
+  skills: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "PHP",
+    "Laravel",
+    "Slim",
+    "Ruby",
+    "Rails",
+    "C/C++",
+    "JUCE",
+    "Python",
+    "Java"
+  ],
+  hobbies: [
+    "Music Production",
+    "Audio Development",
+    "PC Gaming",
+    "Console Gaming",
+    "Netflix Binging",
+    "Game of Thrones",
+    "Legend of Zelda",
+    "Beer Enthusiast"
+  ]
+}

@@ -31,15 +31,9 @@ title: Cameron Roe
 						</div>
 						<div class="cr-section-content">
 							<ul id="skills-list">
-								<li>HTML</li>
-								<li>CSS</li>
-								<li>JavaScript</li>
-								<li>PHP</li>
-								<li>Laravel</li>
-								<li>Slim</li>
-								<li>C/C++</li>
-								<li>Ruby</li>
-								<li>Rails</li>
+								<% data.skills.skills.each do |skill| %>
+									<li><%= skill %></li>
+								<% end %>
 							</ul>
 						</div>
 					</div>
@@ -52,14 +46,9 @@ title: Cameron Roe
 						</div>
 						<div class="cr-section-content">
 							<ul id="hobbies-list">
-								<li>Music Production</li>
-								<li>Audio Development</li>
-								<li>PC Gaming</li>
-								<li>Console Gaming</li>
-								<li>Netflix Binging</li>
-								<li>Game of Thrones</li>
-								<li>Legend of Zelda</li>
-								<li>Beer Enthusiast</li>
+								<% data.skills.hobbies.each do |hobby| %>
+									<li><%= hobby %></li>
+								<% end %>
 							</ul>
 						</div>
 					</div>

@@ -13,7 +13,7 @@ body {
   padding-top: 110px; // Needed because of fixed to top header
   padding-bottom: 110px; // Needed because of fixed to bottom footer
   @media screen and (max-width: 421px) {
-    padding-bottom: 140px; // Small screens need some more padding
+    padding-bottom: 70px; // Small screens need less padding
   }
   font-family: 'Pavanam', sans-serif; // Global font
   font-size: 1.6em;
@@ -26,6 +26,7 @@ header {
     padding-top: 20px;
     background-color: $header;
     font-size: 1em;
+    box-shadow: 0px 0px 20px 5px $header;
 
     .navbar-brand, .navbar-brand:focus, .navbar-brand:visited,
     a, a:focus, a:visited {
@@ -57,6 +58,13 @@ header {
     .navbar-brand:hover, a:hover {
       color: $hover-color;
       background-color: transparent;
+    }
+
+    .navbar-collapse {
+      @media screen and (max-width: 768px) {
+        border-top: 1px solid $font-color;
+        margin-top: 15px;
+      }
     }
 
     ul {

@@ -51,5 +51,5 @@ configure :build do
   activate :minify_html
 
   # And we need some Gzip in the house
-  activate :gzip
+  #activate :gzip
 end
