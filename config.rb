@@ -50,6 +50,9 @@ configure :build do
   # Minify HTML
   activate :minify_html
 
+  # Use Asset Hashes
+  activate :asset_hash
+
   # And we need some Gzip in the house
   #activate :gzip
 end

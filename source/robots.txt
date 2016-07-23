@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: 
+Disallow: /javascripts/
+Disallow: /stylesheets/
+
+Sitemap: http://cameronbroe.com/sitemap.xml
+
