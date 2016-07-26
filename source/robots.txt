@@ -2,6 +2,7 @@ User-Agent: *
 Disallow: 
 Disallow: /javascripts/
 Disallow: /stylesheets/
+Disallow: /thanks/
 
 Sitemap: http://cameronbroe.com/sitemap.xml
 
