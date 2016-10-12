@@ -20,6 +20,22 @@ page '/*.txt', layout: false
 
 activate :meta_tags
 
+activate :blog do |blog|
+  blog.prefix = "blog"
+  blog.permalink = "/{category}/{title}.html"
+  blog.layout = "blog_layout"
+  blog.tag_template = "tag.html"
+  blog.taglink = "/tags/{tag}.html"
+  blog.calendar_template = "calendar.html"
+  blog.paginate = true
+  blog.custom_collections = {
+    category: {
+      link: "/categories/{category}.html",
+      template: "category.html"
+    }
+  }
+end
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload

@@ -13,3 +13,10 @@ gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 gem 'middleman-meta-tags'
 gem 'middleman-minify-html'
+gem 'middleman-blog'
+
+gem 'redcarpet', '~> 3.3', '>= 3.3.3'
+
+gem 'builder', '~> 3.0'
+
+gem 'nokogiri'

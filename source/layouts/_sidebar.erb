@@ -1,0 +1,27 @@
+<div class="col-xs-12 col-sm-4 col-md-3 cr-blog-sidebar">
+	<h3>Categories</h3>
+	<div class="cr-blog-sidebar-container">
+		<ul class="cr-blog-sidebar-links">
+			<% categories = blog.articles.group_by { |a| a.metadata[:page][:category] } %>
+			<% categories.each do |category, articles| %>
+				<li><%= link_to category, category_path(category) %></li>
+			<% end %>
+		</ul>
+	</div>
+
+	<h3>Tag Cloud</h3>
+	<div class="cr-blog-tag-cloud">
+		<% blog.tags.each do |tag, articles| %>
+			<% if current_article %>
+				<% tag_classes = "cr-tag active" %>
+			<% else %>
+				<% tag_classes = "cr-tag" %>
+			<% end %>
+			<div class="<%= tag_classes %>"><%= link_to tag, tag_path(tag) %></div>
+		<% end %>
+	</div>
+
+	<div class="twitter-feed">
+<a class="twitter-timeline" data-link-color="#263651" data-chrome="transparent nofooter" data-tweet-limit="5" href="https://twitter.com/cameronbroe">Tweets by @cameronbroe</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</div>
+</div>

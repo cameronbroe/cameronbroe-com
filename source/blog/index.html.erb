@@ -1,0 +1,53 @@
+---
+pageable: true
+per_page: 10
+title: Blog
+---
+	<div class="jumbotron cr-jumbotron">
+		<h1>Recent Posts</h1>
+	</div>
+	<div class="col-xs-12 col-sm-8 col-md-9 cr-blog-article-list-container">
+		<div class="cr-blog-article-container">
+			<% page_articles.each_with_index do |article, i| %>
+				<div class="cr-blog-article">
+					<div class="cr-article-header">
+						<div class="cr-blog-article-title">
+							<h3><%= link_to article.title, article.url %></h3>
+						</div>
+						<div class="cr-time-container">
+							Posted on <time><%= article.date.strftime("%m/%d/%Y") %></time> in <%= link_to article.metadata[:page][:category], category_path(article.metadata[:page][:category]) %>
+						</div>
+					</div>
+					<div class="cr-blog-article-summary">
+						<%= article.summary(1000) %>
+					</div>
+					<%= link_to "Read More", article.url, class: 'cr-read-more' %>
+					<div class="cr-article-tag-container">
+						<label for="article-<%= i %>">Tags for article: </label>
+						<div id="article-<%= i %>" class="cr-article-tag-cloud">
+							<% article.tags.each do |tag| %>
+								<div class="cr-tag"><%= link_to tag, tag_path(tag) %></div>
+							<% end %>
+						</div>
+					</div>
+				</div>
+			<% end %>
+		</div>
+		<div class="cr-blog-pagination-container">
+			<nav aria-label="Page navigation">
+				<ul class="pager cr-pagination">
+					<li class="previous <%= 'disabled' if !prev_page %>">
+						<a href="<%= prev_page %>">
+							<span>&laquo; Previous Page</span>
+						</a>
+					</li>
+					<li class="next <%= 'disabled' if !next_page %>">
+						<a href="<%= next_page %>">
+							<span>&raquo; Next Page</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<%= partial 'layouts/sidebar' %>

@@ -1,0 +1,15 @@
+<% wrap_layout "layouts/layout" do %>
+	<div class="col-xs-12 col-sm-8 col-md-9">
+		<div class="cr-article-header">
+			<h2><%= current_article.title %></h2>
+			<div class="cr-time-container">Posted on <time><%= current_article.date.strftime("%m/%d/%Y") %></time> in <%= link_to current_article.metadata[:page][:category], category_path(current_article.metadata[:page][:category]) %></div>
+		</div>
+		<article>
+			<%= yield %>
+		</article>
+		<section id="about-me">
+			<figure>
+		</section>
+	</div>
+	<%= partial 'layouts/sidebar' %>
+<% end %>

@@ -8,10 +8,15 @@
 @import "partials/references";
 @import "partials/contact";
 @import "partials/thanks";
+@import "partials/blog";
+@import "partials/about-me";
 
 body {
   background-color: $background;
   padding-top: 110px; // Needed because of fixed to top header
+  @media screen and (max-width: 991px) and (min-width: 768px) {
+    padding-top: 175px;
+  }
   padding-bottom: 110px; // Needed because of fixed to bottom footer
   @media screen and (max-width: 421px) {
     padding-bottom: 70px; // Small screens need less padding
@@ -62,7 +67,7 @@ header {
     }
 
     .navbar-collapse {
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         border-top: 1px solid $font-color;
         margin-top: 15px;
       }
@@ -72,6 +77,9 @@ header {
       font-size: 0.7em;
       @media screen and (max-width: 991px) and (min-width: 768px) {
         font-size: 0.7em;
+        margin: 7.5px -15px;
+        float: left !important;
+        width: 100%;
       }
     }
   }

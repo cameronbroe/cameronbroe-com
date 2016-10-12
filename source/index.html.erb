@@ -58,7 +58,7 @@ title: Cameron Roe
 	</div>
 
 	<!-- Recent posts -->
-	<!--<div class="row">
+	<div class="row">
 		<div class="col-xs-12 cr-section-container">
 			<div class="container-fluid cr-body-container cr-recent-posts">
 				<div class="cr-section">
@@ -66,10 +66,19 @@ title: Cameron Roe
 						<h2>Recent Posts</h2>
 					</div>
 					<div class="cr-section-content">
-						TODO: Blogging section
+						<% blog.articles[0...5].each do |article| %>
+							<article>
+								<h1>
+									<a href="<%= article.url %>"><%= article.title %></a>
+									<time><%= article.date.strftime('%b %e %Y') %></time>
+								</h1>
+								<a href="<%= article.url %>">Read more</a>
+								<%= blog.articles.group_by { |a| a.metadata[:page][:category] } %>
+							</article>
+						<% end %>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>-->
+	</div>
 </div>
