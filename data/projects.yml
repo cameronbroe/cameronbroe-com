@@ -1,9 +1,9 @@
 {
 	projects: [
 		{
-			name: "GistRuby",
+			name: "GistRB",
 			description: "A tool for uploading local source files to GitHub Gists.",
-			github: "gistruby",
+			github: "gistrb",
 			license: "MIT"
 		},
 
