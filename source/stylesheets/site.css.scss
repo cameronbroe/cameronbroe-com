@@ -13,6 +13,9 @@ body {
   background-color: $background;
   padding-top: 110px; // Needed because of fixed to top header
   padding-bottom: 110px; // Needed because of fixed to bottom footer
+  @media screen and (max-width: 1200px) and (min-width: 768px) {
+    padding-top: 160px; // Push down a bit more on medium desktop sizes
+  }
   @media screen and (max-width: 421px) {
     padding-bottom: 70px; // Small screens need less padding
   }
@@ -36,9 +39,6 @@ header {
       background-color: transparent;
       @include prefix(text-shadow, 1px 1px 3px #6F6F6F);
       font-size: 1.75em;
-      @media screen and (max-width: 991px) and (min-width: 768px) {
-        font-size: 1.25em;
-      }
     }
 
     .navbar-brand, .navbar-brand:focus, .navbar-brand:visited {
@@ -61,7 +61,7 @@ header {
     }
 
     .navbar-collapse {
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         border-top: 1px solid $font-color;
         margin-top: 15px;
       }
@@ -71,6 +71,36 @@ header {
       font-size: 0.7em;
       @media screen and (max-width: 991px) and (min-width: 768px) {
         font-size: 0.7em;
+      }
+    }
+  }
+
+  // Medium desktop switches to flexbox to center nav
+  @media screen and (max-width: 1200px) and (min-width: 768px) {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+
+      .navbar-header {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .navbar-collapse {
+        flex-basis: 100%;
+        display: flex !important;
+        justify-content: center;
+
+        ul {
+          display: flex;
+          font-size: 0.6em;
+          float: none !important;
+
+          li {
+            float: none !important;
+          }
+        }
       }
     }
   }
