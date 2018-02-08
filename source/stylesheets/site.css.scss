@@ -31,7 +31,7 @@ header {
 
     .navbar-brand, .navbar-brand:focus, .navbar-brand:visited,
     a, a:focus, a:visited {
-      font-family: 'Josefin Slab', serif;
+      font-family: 'Montserrat', sans-serif;
       color: $font-color;
       background-color: transparent;
       @include prefix(text-shadow, 1px 1px 3px #6F6F6F);
@@ -42,7 +42,6 @@ header {
     }
 
     .navbar-brand, .navbar-brand:focus, .navbar-brand:visited {
-      font-weight: 600;
       font-size: 2.25em;
     }
 
