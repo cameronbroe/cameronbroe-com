@@ -1,25 +1,25 @@
 {
-	projects: [
-		{
-			name: "GistRB",
-			description: "A tool for uploading local source files to GitHub Gists.",
-			github: "gistrb",
-			license: "MIT"
-		},
+  projects: [
+    {
+      name: "GistRB",
+      description: "A tool for uploading local source files to GitHub Gists.",
+      github: "gistrb",
+      license: "MIT"
+    },
 
-		{
-			name: "Mindblow",
-			description: "A simple Brainfuck interpreter with a step-based interactive debugger.",
-			github: "mindblow",
-			license: "MIT"
-		},
+    {
+      name: "Mindblow",
+      description: "A simple Brainfuck interpreter with a step-based interactive debugger.",
+      github: "mindblow",
+      license: "MIT"
+    },
 
-		{
-			name: "Rosh",
-			description: "A simple Linux shell that was written as a semester project for my undergrad operating systems course",
-			github: "rosh",
-			license: "None"
-		},
+    {
+      name: "Rosh",
+      description: "A simple Linux shell that was written as a semester project for my undergrad operating systems course",
+      github: "rosh",
+      license: "None"
+    },
 
     {
       name: "Logato.me",
@@ -27,5 +27,5 @@
       github: "logato.me",
       license: "None"
     }
-	]
+  ]
 }
